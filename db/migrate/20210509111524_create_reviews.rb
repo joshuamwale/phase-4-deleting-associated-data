@@ -5,6 +5,7 @@ class CreateReviews < ActiveRecord::Migration[6.1]
       t.string :comment
       t.integer :rating
       t.belongs_to :dog_house, null: false, foreign_key: true
+      # foreign_key: true establishes a relationship between a review and a dog house
 
       t.timestamps
     end
